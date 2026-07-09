@@ -1,0 +1,35 @@
+{
+  "name": "pro-snippets",
+  "publisher": "alvarosiles",
+  "displayName": "Pro Snippets",
+  "description": "Add code snippets for building components",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.18.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets/snippets.code-snippets"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alvarosiles/pro-snippets.git"
+  },
+  "icon": "images/app.png",
+  "license": "Check in License in the root folder",
+  "bugs": {
+    "url": "https://github.com/alvarosiles/pro-snippets/issues"
+  },
+  "homepage": "https://github.com/alvarosiles/pro-snippets",
+  "keywords": [
+    "Snippets",
+    "JavaScript"
+  ]
+}
