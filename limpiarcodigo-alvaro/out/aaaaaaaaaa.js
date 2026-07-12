@@ -13,3 +13,5 @@ ctrl+shift+alt+n	ctrl+shift+alt+n	Go to Symbol	Yes
 ctrl+w	cmd+w	Selection Grow	Yes
 ctrl+shift+w	cmd+shift+w	Selection Shrink	Yes
 ctrl+7	cmd+7	Comment Line	Yes
+uuuuuu
+dsfrsf
