@@ -1,0 +1,56 @@
+{
+  "name": "limpiarcodigo-alvaro",
+  "displayName": "limpiarcodigo-alvaro",
+  "description": "Limpia código JavaScript y React automáticamente",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "limpiarcodigo-alvaro.helloWorld",
+        "title": "Hello World"
+      },
+      {
+        "command": "limpiarcodigo-alvaro.limpiarCodigo",
+        "title": "♻️💻 Clean Code-Alvaro"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "limpiarcodigo-alvaro.limpiarCodigo",
+          "when": "editorTextFocus && (resourceLangId == javascript || resourceLangId == javascriptreact || resourceLangId == typescript || resourceLangId == typescriptreact)",
+          "group": "1_modification@10"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "dependencies": {
+    "typescript": "^5.9.2"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.96.0",
+    "@types/node": "22.x",
+    "@types/mocha": "^10.0.10",
+    "@typescript-eslint/eslint-plugin": "^8.39.0",
+    "@typescript-eslint/parser": "^8.39.0",
+    "eslint": "^9.32.0",
+    "@vscode/test-cli": "^0.0.11",
+    "@vscode/test-electron": "^2.5.2"
+  }
+}
